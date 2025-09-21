@@ -1,69 +1,101 @@
-# React + TypeScript + Vite
+🔎 Github Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O Github Finder é uma aplicação web que permite buscar usuários do GitHub e visualizar informações detalhadas sobre seus perfis e principais repositórios.
 
-Currently, two official plugins are available:
+O usuário pode digitar o nome de um perfil no campo de pesquisa, e ao clicar no botão (ou pressionar Enter), será redirecionado para a página do usuário com informações como:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👤 Nome
 
-## Expanding the ESLint configuration
+📍 Localidade
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👥 Seguidores
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+➡️ Seguindo
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Além disso, é possível navegar para a seção de melhores repositórios, onde serão exibidos os 5 projetos mais bem ranqueados do usuário, com a opção de acessar o GitHub diretamente para visualizar o código.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+✨ Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🔎 Buscar usuários do GitHub por nome
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+📄 Página com informações do perfil (nome, localidade, seguidores e seguindo)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📂 Listagem dos 5 principais repositórios do usuário
+
+🔗 Link direto para o GitHub de cada repositório
+
+🔄 Navegação entre páginas utilizando React Router DOM
+
+🎨 Interface estilizada com CSS Modules
+
+🖼️ Ícones interativos com React Icons
+
+🛠️ Tecnologias Utilizadas
+
+React
+
+TypeScript
+
+CSS Modules
+
+React Router DOM
+
+React Icons
+
+GitHub REST API
+
+
+🚀 Como Executar o Projeto
+
+Clone o repositório:
+
+git clone https://github.com/seu-usuario/github_finder.git
+
+
+Entre na pasta do projeto:
+
+cd github_finder
+
+
+Instale as dependências:
+
+npm install
+
+
+Configure sua chave de acesso (se necessário) no .env:
+
+VITE_GITHUB_TOKEN=sua_chave_aqui
+
+
+Rode o projeto:
+
+npm run dev
+
+
+Abra no navegador:
+
+http://localhost:5173
+
+📂 Estrutura do Projeto
+github_finder/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── styles/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── types/
+├── package.json
+├── tsconfig.json
+└── README.md
+
+🔗 Deploy
+
+👉 https://github-finder-virid-tau.vercel.app/
+
+🤝 Contribuições
+
+Contribuições são muito bem-vindas!
+Sinta-se à vontade para abrir uma issue ou enviar um pull request.
