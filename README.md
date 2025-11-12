@@ -14,7 +14,7 @@ O usuário pode digitar o nome de um perfil no campo de pesquisa, e ao clicar no
 
 Além disso, é possível navegar para a seção de melhores repositórios, onde serão exibidos os 5 projetos mais bem ranqueados do usuário, com a opção de acessar o GitHub diretamente para visualizar o código.
 
-✨ Funcionalidades
+✨ Funcionalidades:
 
 🔎 Buscar usuários do GitHub por nome
 
