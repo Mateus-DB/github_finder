@@ -30,7 +30,7 @@ Além disso, é possível navegar para a seção de melhores repositórios, onde
 
 🖼️ Ícones interativos com React Icons
 
-🛠️ Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas:
 
 React
 
